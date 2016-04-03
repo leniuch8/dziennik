@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "LogView";
+}
+
+<h2>LogView</h2>
+
+Typ Logu: <b>@Html.Encode(ViewData["LogTyp"])</b>
+@Html.Raw(ViewData["tablica"])
+@*<table border>
+    <tr>
+        <td>Źródło logu</td>
+        <td>Typ Logu</td>
+        <td>Dzień</td>
+        <td>Godzina</td>
+        <td>Treść</td>
+    </tr>
+    @for (int i = 0; i < 4; i++)
+    {
+        <tr>
+            @for (int j = 0; j < 5; j++)
+            {
+            <td>
+                @Html.Encode(ViewData["IleLogow"]);
+            </td>
+            }
+        </tr>
+    }
+    @*<tr>
+        <td>@Html.Encode(ViewData["zrodlo"])</td>
+        <td>@Html.Encode(ViewData["typ"])</td>
+        <td>@Html.Encode(ViewData["dzien"])</td>
+        <td>@Html.Encode(ViewData["godzina"])</td>
+        <td>@Html.Encode(ViewData["tresc"])</td>
+    </tr>*@
+@*</tableborder:>*@
